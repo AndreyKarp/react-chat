@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy_prod:
+  stage: deploy
+  tags:
+    - react_chat
+  script:
+    - echo "Deploy '$CI_COMMIT_REF_NAME@$CI_COMMIT_SHA' to '$CI_ENVIRONMENT_NAME' environment"
+    - react_chat_deploy
+  only:
+    - master

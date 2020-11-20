@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>chat</title>
+  <body>
+    <div id="app" style="display: none"></div>
+    <script>
+      const chatConfig = {
+        project: {
+          imageUrl: 'https://hellocashback.me/themes/hellocashbackua/assets/img/New_logo_unicorn.svg',
+          teamName: 'web-support',
+          defaultMessage: [
+            {
+              id: 1,
+              type: 'text',
+              author: 'them',
+              data: { text: 'Welcome in Web-chat Concierge Service. How can we help you?' },
+            },
+          ],
+        },
+        user: {
+          fistName: 'Andrii',
+          lastName: 'K',
+          phone: '380931112233',
+          imageUrl: '',
+          project: 'hellocashbackua',
+        },
+        agent: {
+          fistName: 'Operator',
+          lastName: '1',
+          imageUrl: '',
+        },
+        jwt: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmaXJzdE5hbWUiOm51bGwsImxhc3ROYW1lIjpudWxsLCJwcm9qZWN0VWlkIjpudWxsLCJwaG9uZXMiOlsiKzM4MDkzMTQ3MzQzMyJdLCJlbWFpbHMiOltdLCJpYXQiOjE1OTYxOTIwNDUsImV4cCI6MTU5NjE5NTY0NX0.rKRj6L6tvN7sN4J54QUht5J1M7kAIEWXZj_So6nt8LQ',
+      }
+    </script>
+    <script src="https://chat-spa.slg.tools/chat.js"></script>
+  </body>
+</html>
